@@ -13,5 +13,6 @@ namespace OwnView_Participation.Models
         public string Color;
         public string Trim;
         public double Price;
+        public string Image;
     }
 }
