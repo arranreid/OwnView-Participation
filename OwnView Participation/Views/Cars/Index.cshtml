@@ -8,14 +8,14 @@
 
 @foreach (var item in Model)
 {
-    <div class="card" style="width: 18rem; float:left; border:double black 5px; margin:15px; min-width:225px;">
+    <div class="card" style="width: 18rem; float:left; border:double black 5px; margin:15px; width:225px; height:250px;">
 
-            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+            @*<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>*@
 
-        <img src=@item.Image class="card-img-top" alt="...">
+        <img src=@item.Image class="card-img-top" style="width:215px; height: 180px" @*alt="..."*@>
         <div class="card-body">
-            <h5 class="card-title">@item.Manufacturer @item.Model</h5>
-            <p class="card-text">Colour: @item.Color</p>
+            <h5 class="card-title">- @item.Manufacturer @item.Model</h5>
+            <p class="card-text">- Colour: @item.Color</p>
         </div>
     </div>
 
